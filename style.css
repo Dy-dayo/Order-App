@@ -1,0 +1,175 @@
+body{
+    background: rgb(167, 217, 239);
+    text-align: center;
+    font-family: ;
+}
+
+
+main{
+    width: 600px;
+    border: 5px solid black;
+    margin: 15px auto;
+    border-radius: 14px;
+    background-color: #fff;
+    position: relative;
+    box-sizing: border-box;
+}
+main img{
+    width: 100%;
+    border-radius: 8px 8px 0px 0px;
+    display: block;
+}
+.available-orders{
+    background-color: #fff;
+    margin: 0;
+}
+.order{
+    display: flex;
+    padding: 20px 5px;
+    height: 80px;
+    align-items: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid rgb(218, 218, 218);
+}
+.order h1{
+    margin-right: 15px;
+    font-size: 65px;
+    width: 90px;
+}
+.order> div{
+    text-align: left;
+    /* padding-left: 10px; */
+    
+}
+.order> div> h3,.order>div> h5{
+    margin: 0px;
+}
+.order> div> p{
+    margin-top:8px;
+    color: rgb(100, 100, 100);
+    /* margin-bottom: 10px; */
+}
+.order button{
+    background-color: inherit;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    margin-left: auto;
+    border: 1px solid rgb(101, 101, 101);
+
+}
+.your-order{
+    display: none;
+    margin-left:40px;
+    margin-right: 40px;
+    padding: 10px;
+}
+.the-order{
+    display: flex;
+    margin-bottom: 5px;
+
+}
+.the-order > .prize-tag{
+    margin-left: auto;
+    /* color: red; */
+}
+.the-order > .remove-order{
+    font-size: 14px;
+    align-self: flex-end;
+    color: grey;
+    cursor: pointer;
+}
+
+.total-price{
+    display: flex;
+    justify-content: space-between;
+}
+.order-btn{
+    width: 100%;
+    height: 50px;
+    font-size: 18px;
+    border-radius: 3px;
+    border: none;
+    color: #fff;
+    background-color: #16DB99;
+    box-shadow: 2px 2px 1px rgb(211, 210, 210);
+}
+span{
+    padding-right:8px ;
+}
+
+.all-my-orders{
+    border-bottom: 2px solid grey;
+}
+form{
+    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: absolute;
+    width: 520px;
+    padding: 0 20px;
+    height: 500px;
+    display: none;  /* Display should be set to flex*/
+    flex-direction: column;
+    top: 0;
+    bottom: 0;
+    gap: 15px;
+    right: 0;
+    left: 0;
+    margin: auto;
+    background-color: #fff;
+    box-sizing: border-box;
+    
+}
+form h2{
+    margin:35px auto;
+}
+
+form input, form button{
+    padding: 5px 10px;
+    width: 450px;
+    height: 60px;
+    font-size: 25px;
+    border: 1px solid #757575;
+    border-radius: 4px;
+}
+form button{
+    display: inline-block;
+    background-color: #16DB99;
+    color: #fff;
+    border: none;
+    margin: 15px auto 0;
+    
+}
+form span{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border-radius: 50%;
+    color: #757575;
+    border: 1px solid grey;
+    width: 20px;
+    padding: 6px;
+    cursor: pointer;
+  
+}
+form> span:hover{
+    background-color: #c5c5c5d0;
+    color: rgb(177, 52, 35);
+}
+.successful-div{
+ background-color: #c4ebd9;
+ /* border-radius: 5p; */
+}
+
+.successful-message{
+    /* font-family: ; */
+    padding: 20px 15px;
+    font-size: 17px;
+}
+.successful-message span{
+    font-size: 21px;
+}
+
+

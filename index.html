@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="A restaurant ordering app">
+        <link rel="stylesheet" href="style.css">
+        <title>Food 0rdering Page</title>
+    </head>
+    <body>
+        <main>
+            <img src="./images/header.png" alt="A image of the companies logo, Jimmy's Diner">
+
+            <div class="available-orders" id="available-orders">
+            </div>
+
+
+            <section class="your-order" id="your-order">
+                <h2>Your Order</h2>
+                <div class="all-my-orders" id="all-my-orders">
+                </div>
+                <p class="total-price">
+                    <span>Total Price:</span>
+                    <span id="total-price-display"></span>
+                </p>
+
+                <button class="order-btn" id="order-btn">Complete Order</button>
+    
+            </section>
+            <form id="payment-details" class="payment-details">
+                <span id="pay-cancel">X</span>
+                    <h2>Enter card details</h2>
+                
+                 <input type="text" name="fullname" placeholder="Enter your name" required class="input-field"/>
+                 <input type="tel" name="cardNumber" placeholder="Enter card number" required class="input-field"/>
+                 <input type="tel" name="CVV" placeholder="Enter CVV" required class="input-field"/>
+
+                 <button id="pay">Pay</button>
+            </form>
+        </main>
+
+        <script src="index.js" type="module"></script>
+    </body>
+</html>
