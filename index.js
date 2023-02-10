@@ -23,7 +23,7 @@ function renderMenu() {
                                 <p> ${para}</p>  
                                 <h5>\$${menu.price}</h5>
                             </div>
-                            <button data-${menu.name} = "${menu.id}" class="button">${button}</button>
+                            <button data-food = "${menu.id}" class="button">${button}</button>
                         </div>
                         `
     })
@@ -34,14 +34,8 @@ function renderMenu() {
 renderMenu()
 
 document.addEventListener('click', (e) => {
-    if (e.target.dataset.hamburger) {
-        handleOrder(e.target.dataset.hamburger)
-    }
-    if (e.target.dataset.pizza) {
-        handleOrder(e.target.dataset.pizza)
-    }
-    if (e.target.dataset.beer) {
-        handleOrder(e.target.dataset.beer)
+    if (e.target.dataset.food) {
+        handleOrder(e.target.dataset.food)
     }
     if (e.target.id === 'order-btn') {
         goToPay()
@@ -87,7 +81,7 @@ function selectedOrder() {
             `
         <div class="the-order">
             <span>${order.name}</span>
-            <span id="remove-order" class="remove-order" data-${order.name}="${order.id}">Remove</span>
+            <span id="remove-order" class="remove-order" data-food ="${order.id}">Remove</span>
             <span class="prize-tag">\$${order.price}</span>
         </div>
         `
